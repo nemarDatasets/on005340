@@ -1,33 +1,104 @@
 {
   "version": "2.0",
-  "dataset_id": "on005340",
-  "source": "openneuro",
-  "source_id": "ds005340",
+  "pipeline_stage": "validated",
   "title": "Fundamental frequency predominantly drives talker differences in auditory brainstem responses to continuous speech",
-  "authors": {
-    "Melissa J. Polonenko": {},
-    "Ross K. Maddox": {}
-  },
   "license": "CC0",
   "dataset_type": "raw",
+  "authors": {
+    "Melissa J. Polonenko": {
+      "orcid": "0000-0003-1914-6117",
+      "affiliations": [
+        {
+          "name": "Department of Speech-Language-Hearing Sciences, University of Minnesota 1 , Minneapolis, Minnesota 55455,"
+        },
+        {
+          "name": "Departments of Biomedical Engineering and Neuroscience, University of Rochester 2 , Rochester, New York 14642,"
+        }
+      ]
+    },
+    "Ross K. Maddox": {
+      "orcid": "0000-0003-2668-0238",
+      "affiliations": [
+        {
+          "name": "Departments of Biomedical Engineering and Neuroscience, University of Rochester 2 , Rochester, New York 14642,"
+        },
+        {
+          "name": "Kresge Hearing Research Institute, Department of Otolaryngology Head and Neck Surgery, University of Michigan 3 , Ann Arbor, Michigan 48109,"
+        }
+      ]
+    }
+  },
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005340.v1.0.4",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1121/10.0034329",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005340",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005340",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2024.07.12.603125",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "NIDCD R01DC017962"
+      "funder_name": "NIDCD",
+      "award_number": "R01DC017962"
     }
-  ]
+  ],
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".hdf5",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset contains auditory brainstem response (ABR) recordings from 15 normal-hearing participants exposed to continuous peaky speech and click stimuli varying in fundamental frequency. The study systematically investigates whether fundamental frequency (f0) is the primary driver of talker-related differences in ABRs by presenting speech from male and female narrators at three different f0s (123, 150, 183 Hz) and click trains at corresponding rates. EEG data were collected using Brain Products equipment with stimuli presented via insert earphones at 65 dB SPL.",
+  "methods_description": "Participants (n=15, ages 19-35 years, normal hearing) were seated in a sound-isolating booth while passively listening to stimuli presented at 65 dB SPL through ER-2 insert earphones at 48 kHz sampling rate. The stimulus set included 90 trials of randomized click trains (3 rates × 30 trials each, 10 s duration) and 720 trials of peaky speech (2 narrators × 3 f0s × 120 trials each, 10 s duration). EEG was recorded in Brain Products format with event triggers marked at stimulus onset and trial identification encoded in trigger values.",
+  "keywords": [
+    {
+      "term": "auditory brainstem response"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "fundamental frequency"
+    },
+    {
+      "term": "speech perception"
+    },
+    {
+      "term": "talker differences"
+    },
+    {
+      "term": "continuous speech"
+    }
+  ],
+  "source_hash": "b5ed0dd16ed22553ca42399582ffed6790c398114606e2844faf7724735e5007"
 }
