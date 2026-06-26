@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Fundamental frequency predominantly drives talker differences in auditory brainstem responses to continuous speech",
+  "description": "This dataset contains auditory brainstem response (ABR) recordings from 15 participants exposed to continuous peaky speech and click stimuli varying in fundamental frequency. The study investigates whether fundamental frequency (f0) is the primary driver of talker-dependent differences in ABRs by systematically manipulating f0 across male and female narrators at three frequency levels (123, 150, 183 Hz) and comparing responses to click trains at matched rates. EEG data were collected using Brain Products equipment with stimuli presented via insert earphones at 65 dB SPL.",
+  "methods_description": "Participants (n=15, ages 19-35 years, normal hearing) were seated in a sound-isolating booth while EEG was recorded during passive listening to continuous peaky speech (720 trials: 2 narrators × 3 f0 conditions × 120 trials) and click trains (90 trials: 3 rates × 30 trials). Stimuli were presented at 65 dB SPL and 48 kHz sampling rate through ER-2 insert earphones. EEG was recorded in Brain Products format (.eeg, .vhdr, .vmrk files). Stimulus files in HDF5 format contain audio waveforms and regressors for deconvolution analysis.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -28,12 +30,27 @@
       ]
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005340.v1.0.4",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "auditory brainstem response"
     },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "fundamental frequency"
+    },
+    {
+      "term": "speech perception"
+    },
+    {
+      "term": "talker differences"
+    },
+    {
+      "term": "neurophysiology"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1121/10.0034329",
       "identifier_type": "DOI",
@@ -53,6 +70,11 @@
       "identifier": "10.1101/2024.07.12.603125",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005340.v1.0.4",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -62,12 +84,12 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "20.6 GB (856 files)"
   ],
   "formats": [
     ".eeg",
@@ -76,29 +98,8 @@
     ".md",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "This dataset contains auditory brainstem response (ABR) recordings from 15 normal-hearing participants exposed to continuous peaky speech and click stimuli varying in fundamental frequency. The study systematically investigates whether fundamental frequency (f0) is the primary driver of talker-related differences in ABRs by presenting speech from male and female narrators at three different f0s (123, 150, 183 Hz) and click trains at corresponding rates. EEG data were collected using Brain Products equipment with stimuli presented via insert earphones at 65 dB SPL.",
-  "methods_description": "Participants (n=15, ages 19-35 years, normal hearing) were seated in a sound-isolating booth while passively listening to stimuli presented at 65 dB SPL through ER-2 insert earphones at 48 kHz sampling rate. The stimulus set included 90 trials of randomized click trains (3 rates × 30 trials each, 10 s duration) and 720 trials of peaky speech (2 narrators × 3 f0s × 120 trials each, 10 s duration). EEG was recorded in Brain Products format with event triggers marked at stimulus onset and trial identification encoded in trigger values.",
-  "keywords": [
-    {
-      "term": "auditory brainstem response"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "fundamental frequency"
-    },
-    {
-      "term": "speech perception"
-    },
-    {
-      "term": "talker differences"
-    },
-    {
-      "term": "continuous speech"
-    }
-  ],
-  "source_hash": "b5ed0dd16ed22553ca42399582ffed6790c398114606e2844faf7724735e5007"
+  "source_hash": "96231924df5006632b2a04e2b554905a40ca71d5288a708a07e2bac57cb4f758"
 }
